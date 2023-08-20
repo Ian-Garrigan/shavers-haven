@@ -39,3 +39,4 @@ class Product(models.Model):
     def __str__(self):
         """Returns Category model name"""
         return self.name
+   
