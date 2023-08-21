@@ -52,7 +52,7 @@
                 <p class="mt-3text-justify"><strong>About this product:</strong><br>{{ product.description }}</p>
                 <!-- This form facilitates adding the product to the shopping bag through a POST request, 
                     allowing us to pass information to the server -->
-                <form class="form" action="" method="POST">
+                <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     <!-- important -->
                     {% csrf_token %}
                     <div class="form-row">
