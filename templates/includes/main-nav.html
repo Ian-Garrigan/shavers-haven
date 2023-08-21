@@ -4,7 +4,7 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+                All Shaving Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
@@ -13,12 +13,17 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-        <!-- List the shaving products category -->
+        <!-- List the lathering category -->
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href=""
-                id="shaving-products">
-                Shaving Products
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#"
+                id="lathering-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lathering Products
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="shaving-products-link">
+                <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Shaving Soaps</a>
+                <a href="{% url 'products' %}?category=creams" class="dropdown-item">Shaving Creams</a>
+                <a href="{% url 'products' %}?category=soaps,creams" class="dropdown-item">All Lathering Products</a>
+            </div>
         </li>
         <!-- List the safety razors category -->
         <li class="nav-item">
