@@ -2,9 +2,9 @@
     <ul class="navbar-nav w-auto mx-auto">
         <!-- List the lathering category -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#"
-            id="lathering-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <u>Lathering Products</u>
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="lathering-products"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <u>Lathering Products</u>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="shaving-products-link">
                 <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Shaving Soaps</a>
@@ -13,38 +13,56 @@
             </div>
         </li>
         <!-- List the safety razors category -->
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href=""
-            id="safety-razors">
-            <u>Safety Razors</u>
-        </a>
-    </li>
-    <!-- List all of the products at once -->
-    <li class="nav-item dropdown">
-        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            All Shaving Products
-        </a>
-        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price (Lowest)</a>
-            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating (Highest)</a>
-            <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category (A-Z)</a>
-            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-        </div>
-    </li>
-        <!-- List the razor blades category -->
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href=""
-            id="razor-blades">
-            <u>Razor Blades</u>
-        </a>
-    </li>
-    <!-- List the shaving brushes category -->
-    <li class="nav-item">
-        <a class="logo-font font-weight-bold nav-link text-dark mr-5" href=""
-        id="shaving-brushes">
-        <u>Shaving Brushes</u>
-    </a>
-</li>
-</ul>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="traditional-razors"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <u>Traditional Razors</u>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="shaving-products-link">
+                <a href="{% url 'products' %}?category=double_edge_safety_razors" class="dropdown-item">Double Edge
+                    Safety Razors</a>
+                <a href="{% url 'products' %}?category=straight_razors" class="dropdown-item">Straight Razors
+                    (cut-throat)</a>
+                <a href="{% url 'products' %}?category=straight_razors,double_edge_safety_razors"
+                    class="dropdown-item">All Razors</a>
+            </div>
+        </li>
+        <!-- List all of the products at once -->
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Shaving Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price (Lowest)</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating (Highest)</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category (A-Z)</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="razor-blades"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <u>Razor Blades</u>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="shaving-products-link">
+                <a href="{% url 'products' %}?category=single_edge_blades" class="dropdown-item">Single Edge Blades</a>
+                <a href="{% url 'products' %}?category=double_edge_blades" class="dropdown-item">Double Edge Blades</a>
+                <a href="{% url 'products' %}?category=double_edge_blades,single_edge_blades" class="dropdown-item">All
+                    Razor Blades</a>
+            </div>
+        </li>
+        <!-- List the shaving brushes category -->
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="shaving-brushes"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <u>Shaving Brushes</u>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="shaving-products-link">
+                <a href="{% url 'products' %}?category=synthetic_brushes" class="dropdown-item">Synthetic Brushes</a>
+                <a href="{% url 'products' %}?category=natural_brushes" class="dropdown-item">Natural Brushes</a>
+                <a href="{% url 'products' %}?category=synthetic_brushes,natural_brushes" class="dropdown-item">All Shaving Brushes</a>
+            </div>
+        </li>
+    </ul>
 </div>
