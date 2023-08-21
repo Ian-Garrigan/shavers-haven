@@ -20,6 +20,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="shortcut icon" type="image/png" href="{% static 'favicon/shaving-brush.ico' %}">
   {% endblock %}
@@ -47,7 +50,7 @@
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-black my-0"><strong>Shavers</strong> Haven</h2>
+          <h2 class="logo-font text-black my-0"><strong class="text-navy">Shavers</strong>Haven</h2>
         </a>
       </div>
       <!-- FORM -->
@@ -121,9 +124,9 @@
     </div>
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
-        <h3 class="logo-font my-1 delivery-banner">
+        <h5 class="logo-font my-1 delivery-banner">
           Free delivery on orders over €45{{ free_delivery_threshold }}!
-        </h3>
+        </h5>
       </div>
     </div>
   </header>

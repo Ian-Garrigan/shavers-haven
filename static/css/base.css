@@ -51,6 +51,12 @@ body {
 
 .text-black {
     color: #000 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-navy {
+    color: rgb(104, 48, 8);
+    font-family: 'Calistoga', cursive;
 }
 
 .border-black {
@@ -59,7 +65,7 @@ body {
 
 /* Delivery banner fix: white text on black bg */
 .bg-black {
-    background: #000 !important;
+    background:rgb(118, 76, 34) !important;
 }
 
 .overlay {
