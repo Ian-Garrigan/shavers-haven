@@ -1,0 +1,44 @@
+<script type="text/javascript">
+
+    // Control the enabling/disabling of +/- buttons based on the chosen quantity range (1-99)
+    function handleEnableDisable(itemId) {
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue > 98;
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+    }
+
+    // Ensure proper enabling/disabling of all input fields when the page loads
+    let allQtyInputs = $('.qty_input');
+    for (let i = 0; i < allQtyInputs.length; i++) {
+        let itemId = $(allQtyInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
+
+    // Update the enabling/disabling status whenever the input value changes
+    $('.qty_input').change(function () {
+        let itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
+
+    // Increase quantity when the "+" button is clicked
+    $('.increment-qty').click(function (e) {
+        e.preventDefault();
+        let itemId = $(this).data('item_id');
+        let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        let currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue + 1);
+        handleEnableDisable(itemId);
+    });
+
+    // Decrease quantity when the "-" button is clicked
+    $('.decrement-qty').click(function (e) {
+        e.preventDefault();
+        let itemId = $(this).data('item_id');
+        let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        let currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue - 1);
+        handleEnableDisable(itemId);
+    });
+</script>
