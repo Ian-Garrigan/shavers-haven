@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os 
 from pathlib import Path
 
+if os.path.isfile('env.py'):
+    import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!fk6+xgnn51h3ps=+r2h$+2)-7k0+y6rifzfz2f69*%iv^#z^('
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = [ '8000-iangarrigan-shavershave-8q503fjgfgb.ws-eu102.gitpod.io', '8000-iangarrigan-shavershave-8q503fjgfgb.ws-eu104.gitpod.io']
 
@@ -187,3 +190,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_DELIVERY_THRESHOLD = 45
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# Stripe
+STRIPE_CURRENCY = 'eur'
+
+# get from env to keep safe
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
