@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
 
 # Create your views here.
 def view_bag(request):
@@ -25,20 +26,13 @@ def adjust_bag(request, item_id):
     
 # Adjust amount of product in the shopping bag
     
-    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get("quantity"))
-
     bag = request.session.get("bag", {})
 
     if quantity > 0:
-        bag[item_id] = quantity
-        messages.success(
-            request, f"Updated {product.name} quantity to {bag[item_id]}")
+            bag[item_id] = quantity
     else:
-# Delete by pop func
-        bag.pop(item_id)
-        messages.success(
-            request, f"Removed {product.name} from your bag")
+            bag.pop(item_id)
 
     request.session["bag"] = bag
     return redirect(reverse("view_bag"))    
