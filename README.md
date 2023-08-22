@@ -1,2 +1,55 @@
-# shavers-haven
-E-commerce application 
+# ShaversHaven
+
+## Overview
+
+- [Contents](#contents)
+    * [UX](#ux)
+    * [Purpose](#purpose)
+    * [User Stories](#user-stories)
+    * [Wireframes](#wireframes)
+        + [Home page](#home-page)
+        + [Products Page](#)
+        + [User Login](#)
+        + [Shopping Bag](#)
+        + [Contact Us](#)
+        + [Product Details](#product-details)
+        + [Navigation Element](#navigation-element)
+    * [Agile Methodology](#agile-methodology)
+        + [Canban board and issues](#canban-board-and-issues)
+        + [Epics & User Stories](#canban-board-and-issues)
+    * [Existing Features](#existing-features)
+        + [Media Screen Sizes](#navbar-and-footer) 
+        + [Navbar and Footer](#navbar-and-footer) 
+        + [Shop Products](#shop-products)
+        + [Product Details](#product-details)
+        + [Homepage](#homepage)
+        + [landing Page](#landing-page)
+        + [Shopping bag](#shopping-bag)
+        + [Email Notification](#email-notification)
+        + [User Messages](#user-messages)
+        + [About Us](#about-us)
+        + [Registration/Authentication](#registration-authentication)
+    * [Future Features](#future-features)
+        + [Current stock](#current-stock)
+        + [Customer Text Reviews](#customer-text-reviews)
+    * [Marketing](#marketing)
+        + [SEO](#seo)
+        + [Facebook Business Page](#facebook-business-page)
+        + [Newsletter](#newsletter)
+    * [Technologies Used](#technologies-used)
+        + [Languages Used](#languages-used)
+        + [Technologies and Programs Used:](#technologies-and-programs-used-)
+        + [Frameworks Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+    * [Tests](#tests)
+        + [Automated tests](#automated-tests)
+        + [Manual tests](#manual-tests)
+        + [Lighthouse](#lighthouse)
+    * [Bugs](#bugs)
+    * [Deployment and making a clone](#deployment-and-making-a-clone)
+    * [Credits](#credits)
+        + [Online resources](#online-resources)
+        + [People](#people)
+
+
+
+
