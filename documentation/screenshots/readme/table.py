@@ -1,7 +1,7 @@
-def print_issues(file_path):
-    """function to print issues for readme in the form of a table"""
-    with open(file_path, 'w') as file:
-        for i in range(140):
-            print(f'|  [#{i}](https://github.com/Ian-Garrigan/shavers-haven/issues/{i}) |  |', file=file)
+def print_issues():
+    """function to pring issues for readme in a form of table"""
+    for i in range(140):
+        print(f'|  [#{i}](https://github.com/Ian-Garrigan/shavers-haven/issues{i}) |  |')
 
-print_issues('table.txt')
+
+print_issues()
