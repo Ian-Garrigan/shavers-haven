@@ -1,0 +1,1074 @@
+[
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "soaps",
+        "friendly_name": "Shaving Soaps"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "creams",
+        "friendly_name": "Shaving Creams"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "double_edge_safety_razors",
+        "friendly_name": "Double Edge Safety Razors"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "straight_razors",
+        "friendly_name": "Straight Razors (cut-throat)"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "synthetic_brushes",
+        "friendly_name": "Synthetic Brushes"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "natural_brushes",
+        "friendly_name": "Natural Brushes"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "double_edge_blades",
+        "friendly_name": "Double Edge Blades"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+        "name": "single_edge_blades",
+        "friendly_name": "Single Edge Blades"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 2,
+        "name": "Proraso Red Soap 150ml",
+        "sku": "PR-SS-1",
+        "description": "Enriched with Sandalwood Oil and Shea Butter, it also protects the driest skins against the aggression of the razor, making it easier to shave thick and hard beards.",
+        "price": "6.95",
+        "rating": "4.60",
+        "image_url": null,
+        "image": "proraso-red.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 2,
+        "name": "Proraso White Soap 150ml",
+        "sku": "PR-SS-2",
+        "description": "Enriched with Oat and Green Tea extracts, it protects the skin as if it were an invisible shield, preventing troublesome reddening.",
+        "price": "6.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "proraso-white-soap.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 3,
+        "name": "Proraso Green Cream 150ml",
+        "sku": "PR-SC-3",
+        "description": "Its formula, also thanks to the properties of Eucalyptus Oil and Menthol, has been studied to combine excellent smoothness and a toning action which has a pleasant refreshing effect.",
+        "price": "7.50",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "proraso-green-shave-cream.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 3,
+        "name": "Proraso Red Cream 150ml",
+        "sku": "PR-SC-1",
+        "description": "Enriched with Sandalwood Oil and Shea Butter, it also protects the driest skins against the aggression of the razor, making it easier to shave thick and hard beards.",
+        "price": "7.50",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "proraso-red-shave-cream.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 3,
+        "name": "Proraso White Cream 150ml",
+        "sku": "PR-SC-2",
+        "description": "Enriched with the addition of Oat and Green Tea extracts, it helps to protect the skin as if it were an invisible shield, preventing annoying rashes.",
+        "price": "7.50",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "proraso-white-shave-cream.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 2,
+        "name": "Proraso Green Soap 150ml",
+        "sku": "PR-SS-3",
+        "description": "Its formula, also thanks to the properties of Eucalyptus Oil and Menthol, has been studied to combine excellent smoothness with a toning action which has a pleasant refreshing effect.",
+        "price": "6.95",
+        "rating": "4.60",
+        "image_url": null,
+        "image": "proraso-green-soap.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 3,
+        "name": "Taylor of Old Bond Street Sensitve Cream 150ml",
+        "sku": "TA-SC-1",
+        "description": "A modern fresh fougère, Jermyn Street Collection Shaving Cream is allergen-free and has been specially formulated for sensitive skin.",
+        "price": "18.95",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "taylor-bond-shaving-cream-jermyn-st-sensitive-150ml.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 3,
+        "name": "Taylor of Old Bond St Coconut Shave Cream 150ml",
+        "sku": "TA-SC-2",
+        "description": "Offering a rich and fragrant lather, this coconut shaving cream contains essential oils perfect for protecting and moisturising the skin.",
+        "price": "16.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "taylor-bond-shaving-cream-coconut-150ml.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 3,
+        "name": "Taylor of Old Bond St Almond Shave Cream 150ml",
+        "sku": "TA-SC-3",
+        "description": "A rich and sweetly scented shaving cream that creates a uniquely smooth and creamy lather for a better shave.",
+        "price": "16.95",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "taylor-shaving-cream-almond-150ml.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 3,
+        "name": "Taylor of Old Bond St Sandalwood Shave Cream 150ml",
+        "sku": "TA-SC-4",
+        "description": "A Taylor of Old Bond Street classic. Known to all wet shaving enthusiasts, having a luxurious and masculine sandalwood fragrance. This shaving cream creates a uniquely smooth and creamy lather for a fresh shave.",
+        "price": "16.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "taylor-bond-shaving-cream-sandalwood-150ml.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 2,
+        "name": "Taylor Old Bond Street Sandalwood Soap & Bowl",
+        "sku": "TA-SS-1",
+        "description": "This Taylor of old bond street large shaving soap is presented in a classic wooden soap bowl. Refillable with your favourite Taylor shave soaps these are a must have for any serious soap users. Whip up a rich lather easily for a great Taylor shave. Currently available in Sandalwood and Lavender scents.",
+        "price": "39.95",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "tatlors_wooden_shaving_bowl_soap.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 2,
+        "name": "Cella Shaving Soap Crema Sapone 1kg",
+        "sku": "CE-SS-1",
+        "description": "An excellent tallow based soap from Cella. This pure Italian soap has a mild almond scent and creates a fantastic lather in seconds. It is soft enough to mould perfectly into shape of your favourite soap dish. Presented in eye catching and truly unique packaging. Large 1000g block.",
+        "price": "29.95",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "cella_shaving_soap_crema_sapone.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 3,
+        "name": "Cella Organic Aloe Shaving Cream",
+        "sku": "CE-SC-1",
+        "description": "This soap helps to get a great shave without the annoying irritation that usually appears. Thanks to generating a creamy foam, the skin is always hydrated; This leaves a feeling of comfort and allows a glide of the blade that does not cause damage.",
+        "price": "8.50",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "cella-organic-aloe.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 3,
+        "name": "Cella Shaving Cream",
+        "sku": "CE-SC-2",
+        "description": "Cella Milano “pure” shaving soap made with coconut oil & tallow. Traditional shaving soap that creates a creamy leather. The ancient formula used by Cella since 1899, hydrates and protects the skin leaving it fresh and helps to avid skin irritation.",
+        "price": "6.50",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "cella-shaving-cream..webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 2,
+        "name": "Arko Shaving Soap Stick 75g",
+        "sku": "AR-SS-1",
+        "description": "Arko Barber's Shaving Cream Stick is the king of the inexpensive soaps. This soap lathers well and provides enough lubrication that you can use it with any of your razors for a close and smooth shave. It leaves the skin very smooth and supple and has a classic barbershop scent.",
+        "price": "3.50",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "arko-shaving-stick.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 2,
+        "name": "Speick Shaving Soap Stick 75g",
+        "sku": "SP-SS-1",
+        "description": "The Speick shaving stick soap by Walter Rau Speickwerk creates an impressive lather and has a very pleasant herbal scent. As with all pure soaps it is free from preservatives and is a genuine traditional wet shaving product. The lather holds firm giving a smooth and gentle shave. Shave sticks are very economical and are excellent value due to their long life span.",
+        "price": "4.85",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "speick-shaving-soap-stick.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 2,
+        "name": "Dr K Soap Company Shaving Soap Lime 70g",
+        "sku": "DRK-SS-1",
+        "description": "Made using only natural ingredients, much research and development has resulted in a shaving soap that produces a fine, long lasting lather with good razor slip and after-shave conditioning qualities. Long-lasting – some customers have reported using a single bar for up to 6 months!",
+        "price": "12.95",
+        "rating": "3.80",
+        "image_url": null,
+        "image": "dr-k-shaving-soap-lime.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 2,
+        "name": "Muhle Aloe Vera Shaving Soap Re-fill 65g",
+        "sku": "MUH-SS-1",
+        "description": "Extraordinary shaving soap with excellent performance even with lukewarm water, lathers easily. Specially formulated for sensitive skin, thanks to the soothing and moisturizing qualities of Aloe Vera. It has a fresh and discreet fragrance.",
+        "price": "7.00",
+        "rating": "3.50",
+        "image_url": null,
+        "image": "muhle-shaving-soap-refill-aloe-vera.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 2,
+        "name": "Tcheon Fung Sing Shaving Soap Bitter Almond",
+        "sku": "TF-SS-1",
+        "description": "Tcheon Fung Sing Ciotola Rossa (Red) Shaving Soap has a classic fragrance of bitter almond. Perhaps the definitive historical fragrance of Italian wet shaving, this soft soap can trace its roots back to 1945 where both the soap and container were designed by the company founder. Still made in-house making this a ‘zero km’ product when it leaves the factory.",
+        "price": "3.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "tcheon-fung-sing.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 2,
+        "name": "Saponificio Varesino Tundra Artica Shaving Soap",
+        "sku": "SV-SS-1",
+        "description": "Saponificio Varesino Tundra Artica Shaving Soap will deliver a rich, luxurious lather whilst also moisturising the skin for smooth, close and comfortable shave. Made from 100% vegetable ingredients and containing no parabens or palm oil, the triple milled soap contains extract of Icelandic lichen, cranberry, larch and castor oil to reduce water loss and increase lubrication.",
+        "price": "41.95",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "saponificio-varesino-tundra-artica-shaving-soap.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 8,
+        "name": "Artamis Rosewood & Metal Straight Razor",
+        "sku": "SR-1",
+        "description": "Quality straight razor with a polished carbon steel blade.\r\n\r\nIt is hollow ground with a 5/8\" round point.\r\n\r\nThe handle is finished in rosewood and heavyweight metal.",
+        "price": "49.95",
+        "rating": "3.60",
+        "image_url": null,
+        "image": "straight_razor001.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 8,
+        "name": "Dovo Special Straight Razor",
+        "sku": "SR-2",
+        "description": "The Dovo Special straight razor has classic faux Tortoiseshell scales with a retro Dovo logo metal inlay. The blade is 5/8\" carbon steel and features simple Dovo Special gold inlay graphic. Carbon steel blades are preferred by many straight users as they are easier to hone and can take a very sharp edge.\r\n\r\nModel 1516580 / 12581358",
+        "price": "119.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "straight_razor002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 8,
+        "name": "Feather Artist Club SS",
+        "sku": "SR-3",
+        "description": "The Feather Artist Club SS offers the ability to shave with a straight razor without the need for stropping and honing. The Artist Club SS has a stainless steel blade holder as standard and the new design makes for excellent shaving performance.\r\n\r\nStainless Steel blade holder\r\nBlack Handle\r\nACS-RB",
+        "price": "86.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "straight_razor006.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 8,
+        "name": "Feather Artist Club SS Japanese Style",
+        "sku": "SR-4",
+        "description": "The Japanese Style non folding Feather Artist Club SS offers the ability to shave with a straight razor without the need for stropping and honing. The non folding Artist Club SS has a stainless steel blade holder as standard and the new design makes for excellent shaving performance.\r\n\r\nStainless Steel blade holder\r\nRubberised Black Handle\r\nACS-NB",
+        "price": "74.95",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "straight_razor004.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 8,
+        "name": "Feather Artist Club Scotch Wood SS",
+        "sku": "SR-5",
+        "description": "The Feather Artist Club SS with Scotch wood handle offers the ability to shave with a straight razor without the need for stropping and honing. The Artist Club SS has a stainless steel blade holder as standard and the new design makes for excellent shaving performance.\r\n\r\nStainless Steel blade holder\r\nResin injected scotch wood handle",
+        "price": "89.95",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "straight_razor005.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 8,
+        "name": "Feather Artist Club DX Wood",
+        "sku": "SR-6",
+        "description": "The Feather DX Artist Club in resinated wood is visually stunning and a supreme shaver. The blade holder is made from SUS316 Stainless Steel and the resinated wood handle is comfortable to hold. The Artist Club DX razor is made in Japan.\r\n\r\nModel: ACD-RW\r\nResinated Wood",
+        "price": "162.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "straight_razor003_Xi25C8E.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 8,
+        "name": "Parker PTW Barber Shavette Razor - White",
+        "sku": "SR-7",
+        "description": "This razor has an insert which you load the blade into. You then slide the insert back into the blade arm with the blade. Unlike most shavettes, the razor has a stainless steel blade arm, not lower quality aluminium.\r\n\r\nThhe shavette razor performs just like a straight razor. Just pick your favourite double edge blade, snap it in half, put it in the razor and you're off. No sharpening or honing required.",
+        "price": "23.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "straight_razor007.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 8,
+        "name": "Parker SRDW Barber Razor - Rosewood",
+        "sku": "SR-8",
+        "description": "The unique clip to close mechanism on this razor keeps the razor blade securely in place and perfectly aligned. Unlike most replaceable blade barber razors, it has a heavyweight stainless steel blade arm in addition to a finished dark padauk wood handle, not lower quality aluminium.\r\n\r\nThese shavette razors perform just like a straight razor, except that there is no honing or sharpening required. Just pick your favourite double edge blade, snap it in half, and insert it into the razor.",
+        "price": "32.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "straight_razor008.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 8,
+        "name": "Proraso Professional Old Style Razor",
+        "sku": "SR-9",
+        "description": "The Professional Proraso Shavette features an ergonomic walnut wooden handle engraved with the Proraso logo and a stainless steel shank and blade holder etched with 'Save The Barber', an homage to the master barbers who collaborated with Proraso on the design of this razor.\r\n\r\nIt is a cost effective and low maintenance alternative to a traditional straight razor, ideal for those who are just starting out. It holds a single edge blade, or a double edge blade snapped in half. When the disposable blade becomes dull, the comfortable and simple opening system means it is easy to load.",
+        "price": "44.95",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "straight_razor009.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 7,
+        "name": "Muhle R89 Classic Razor",
+        "sku": "DER-1",
+        "description": "The Muhle R89 is a popular safety razor known for its elegant design and exceptional performance. It is made from high quality materials, including a chrome plated metal handle and a closed comb head that provides a comfortable and precise shave. The R89 is a mild razor, making it ideal for beginners, but it still delivers a close and smooth shave. Its design and craftsmanship ensure durability and a long lasting tool for wet shaving enthusiasts. The Muhle R89 is an excellent choice for anyone looking for a reliable and stylish safety razor.",
+        "price": "33.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "double_edge_razor010.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 7,
+        "name": "Muhle Rocca R96 Stainless Steel Razor",
+        "sku": "DER-2",
+        "description": "The MUHLE ROCCA R96 is very stylish and innovative stainless steel razor. The unique design and premium quality materials used in this razor produce a stunning all round result. The stainless steel of the R96 is complimented by a honeycomb coated matte black handle for a sleek modern look. These razors are durable and are designed to last.\r\n\r\nWeight 80g\r\nDimensions 41 mm x 105 mm\r\nMuhle R96 Rocca made in Germany",
+        "price": "88.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "double_edge_razor009.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 7,
+        "name": "Edwin Jagger 3D DE3D14BL",
+        "sku": "DER-3",
+        "description": "The Edwin Jagger 3D razor features a laser cut 3 dimensional deep diamond pattern on the handle for enhanced grip. The classic closed comb Edwin Jagger razor head is comfortable and efficient to shave with and the quality of the razor is simply fantastic.\r\n\r\nEdwin Jagger DE3D14BL Barley\r\nHigh quality chrome finish\r\nTotal Length 93mm\r\nHandle Length 85mm",
+        "price": "49.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "double_edge_razor002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "category": 7,
+        "name": "Muhle R108 Classic Razor",
+        "sku": "DER-4",
+        "description": "The MUHLE R108 classic closed comb safety razor is an efficient and supreme shaving tool. This razor is made in Germany to a very high standard and will give years of shaving pleasure. The razor head is Muhle's classic closed comb design and the handle is a premium grade tortoiseshell resin handle.\r\n\r\nStandard closed comb",
+        "price": "35.95",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "double_edge_razor006.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "category": 7,
+        "name": "Muhle R89 Black Safety Razor",
+        "sku": "DER-5",
+        "description": "The MUHLE R89 Black all metal razor with the legendary R89 head. The shave from this razor is mild and efficient and the finish is excellent. Made in Germany you can rest assured this razor was made in an ethical and careful manner.\r\n\r\nWeight 70g\r\nBlack handle with chrome highlights\r\nMade in Germany",
+        "price": "34.95",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "double_edge_razor007.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "category": 7,
+        "name": "Timor Pure Shaver Safety Razor",
+        "sku": "DER-6",
+        "description": "The TIMOR Safety Razor Pure Shaver, a timeless and elegant grooming tool designed with quality and functionality in mind. The Pure Shaver is made with a solid, bright chrome-plated brass handle, this razor boasts a textured grip for optimal control and safety during use.",
+        "price": "27.95",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "double_edge_razor001.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "category": 7,
+        "name": "Parker 76R Safety Razor",
+        "sku": "DER-7",
+        "description": "A handsome heavyweight safety razor with the world famous Parker twist-to-open head for a close comfortable shave. Twisting the knob on the bottom of the razor will open the butterfly doors for blade insertion. This graphite and chrome plated all brass razor is a smooth shaver with extra knurling for an improved grip.\r\n\r\nParker Safety Razor has been making the highest quality, precision engineered safety razors for over 45 years.",
+        "price": "32.95",
+        "rating": "3.80",
+        "image_url": null,
+        "image": "double_edge_razor012.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "category": 7,
+        "name": "The Bluebeards Revenge CUTLASS Double Edged Razor",
+        "sku": "DER-8",
+        "description": "Declare war on stubborn stubble with this Cutlass Double-Edge Safety Razor. Finished in a gleaming gunmetal grey, this single-blade razor offers ruggedness from aluminium body to zinc alloy head.\r\n\r\nHandle is embossed with a raised diamond knurling pattern to enhance your level of grip.",
+        "price": "46.95",
+        "rating": "3.20",
+        "image_url": null,
+        "image": "double_edge_razor015.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "category": 7,
+        "name": "Razorock Game Changer 0.84 Closed Comb",
+        "sku": "DER-9",
+        "description": "This is a classic razor with double-edged blades and a unique design manufactured with great precision. Thanks to the 0.84mm comb opening it provides a very close shave. Its magnificent Bulldog handle (13 x 90mm) and its light weight ensure an easy and comfortable use.\r\n\r\nThe razor is made of 316L marine grade stainless steel and has a superb quality metal chrome finish. With an elegant design that will bring a different and stylish touch.",
+        "price": "82.95",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "double_edge_razor013.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "category": 7,
+        "name": "Merkur 34C HD Safety Razor",
+        "sku": "DER-10",
+        "description": "Merkur 34C HD Safety Razor. A high polish chrome finish 3 piece safety razor. Merkur 34C is well known by its perfect balance, comfortable and heavy handle that facilitates shaving.\r\n\r\nWeight: 80gr\r\n\r\nLength: 8cm\r\n\r\nAn excellent choice for both beginners or experience users.",
+        "price": "45.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "double_edge_razor003.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "category": 7,
+        "name": "Merkur 38C HD Long Handle Barber Pole Safety Razor",
+        "sku": "DER-11",
+        "description": "Merkur 38C classic safety razor The 38C razor is one of the heavyweights in the Merkur range. Longtime fans also call it the MERKUR Barber Pole. It owes its nickname to the characteristic shape of its fluted handle, which was designed based on a Barber's Pole. With its non-slip handle, it gives you a firm grip and thanks to its high weight, every movement is carried out with stoic calm. It's a tough razor, made to handle your beard.\r\n\r\nMade in Germany.",
+        "price": "54.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "double_edge_razor004.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+        "category": 7,
+        "name": "Merkur Future Safety Razor",
+        "sku": "DER-12",
+        "description": "The Merkur Futur Brillo Safety Razor is a tool used to achieve an easy close shave. The design of this machine reduces the probability of generating redness or annoying irritation.\r\n\r\nIt has an ergonomic design that in turn has a long and comfortable handle that is finished in bright chrome. This product has 6 different positions that allow the blades to work at different angles.",
+        "price": "77.95",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "double_edge_razor005.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+        "category": 7,
+        "name": "Mühle Doule Edge Safety Razor R41 \"Grande\" Open Comb",
+        "sku": "DER-13",
+        "description": "The GRANDE version features a longer and wider handle than the original version. This model also fits Mühle RHM SR safety razor stand.",
+        "price": "45.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "double_edge_razor008_JtITHMV.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+        "category": 7,
+        "name": "Mühle Safety Razor Rytmo Steamed Ashwood",
+        "sku": "DER-14",
+        "description": "Mühle Classic Razor Series Rytmo Wood After beech and oak, ash is one of the most important native hardwoods. It is found in Europe, especially in the northernmost regions. For our application, the wood is heated strongly for a short time.\r\n\r\nThe straight razor has long been considered an elegant classic with which even contours can be shaved with precision. For many, it is the quintessential razor.",
+        "price": "39.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "double_edge_razor011.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+        "category": 7,
+        "name": "Rockwell 2C Razor-White Chrome",
+        "sku": "DER-15",
+        "description": "Rockwell 2C Razor-White Chrome. A fully adjustable razor for any skin type and stubble length. Cast from premium high-end chromed zinc alloys with a striking White Chrome finish.Perfectly weighted and balanced through unparalleled craftsmanship for intuitive handling and effortless glide.\r\n\r\nRockwell 2C is made of 1 reversible base plate that includes Rockwell sizes 1 and 3 - our most popular settings, making the Rockwell 2C a great beginner classic razor or everyday use. The blade angle, without being excessive, allow an efficient shave from the first size.\r\n\r\n The plates fit perfectly with the Rockwell handle. This is an elegant handle with a deep knurled grip for no-slip shaving. The handle´s weight and dimensions have been designed to reach the perfect balance and angle with every plate.\r\n\r\nIncludes Rockwell blades box.\r\n\r\nTotal lenght: 97mm\r\n\r\nHandle length: 85mm.\r\n\r\nTotal Weight: 95gr.\r\n\r\nHandle weight: 56gr.",
+        "price": "35.95",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "double_edge_razor014.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+        "category": 7,
+        "name": "Timor Open Comb 1365",
+        "sku": "DER-16",
+        "description": "Timor classic open comb razor manufactured and designed by Giesen & Forsthoff. The handle is made of Padouk wood and the head is made of high-quality Zamak and chrome-plated steel guaranteed by the manufacturer. It has an excellent balance and a studied grip to shave comfortably and safely.\r\n\r\nRemovable blade support with open comb, indicated to achieve maximum trimming, indicated for hard beards. Elegant design in chrome/matt finish and Padouk wood .",
+        "price": "77.95",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "double_edge_razor016.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+        "category": 9,
+        "name": "Muhle Silvertip Fibre Black L 23mm V2",
+        "sku": "SB-01",
+        "description": "Revolutionary Muhle Silvertip Fibres are designed to mimic the qualities of the finest grade of badger hair brushes. Silvertip Fibres are animal friendly and will create a rich creamy lather from creams and soaps.\r\n\r\nBlack turned resin handle\r\nLarge 23mm Silvertip Fibre knot",
+        "price": "50.00",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "synthetic_brush003.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+        "category": 9,
+        "name": "Muhle Black Fibre Brush V2",
+        "sku": "SB-02",
+        "description": "This Muhle Black fibre shaving brush is designed to mimic the qualities of a badger hair brush. Synthetic brushes have made much progress over the years and work very well with both creams and soaps.\r\n\r\nAnimal friendly synthetic fibre brush\r\n21mm knot",
+        "price": "33.95",
+        "rating": "3.80",
+        "image_url": null,
+        "image": "synthetic_brush002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+        "category": 9,
+        "name": "Muhle Silvertip Fibre Ivory Brush L 23mm V2",
+        "sku": "SB-03",
+        "description": "This ivory coloured shaving brush features fine Silvertip Fibre hairs designed to mimic the properties of a badger shaving brush. The handle is turned and polished from a high grade resin.\r\n\r\nLarge Knot 23mm\r\nSilvertip Fibres",
+        "price": "46.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "synthetic_brush004.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+        "category": 9,
+        "name": "Omega HI-BRUSH synthetic fiber shaving brush, ash wood handle.",
+        "sku": "SB-04",
+        "description": "HI-BRUSH (Badger effect) and S-Brush (Hog bristle effect) synthetic fibers are made of PBT, a thermoplastic semi-crystalline polyester. Both filaments are corrugated as to improve the performance of the brush in terms of holding and releasing the lather during the shave. Both filaments are chemically tapered to give a soft touch on the skin. Synthetic fibers are really much more performing than hog bristle and badger hair. They better withstand their daily duty and are much more hygienic and easier to clean.\r\n\r\nLast but not least, Omega synthetic fibers respect the animals!",
+        "price": "22.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "synthetic_brush006.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+        "category": 9,
+        "name": "Omega Hi Brush Barber Pole 46806",
+        "sku": "SB-05",
+        "description": "The Omega Barber Pole 46806 shaving brush has a tall barber pole handle. The soft high tech synthetic fibers simulate badger hair and are gentle and luxurious on the skin. The specially developed animal friendly brush will effortlessly work up lather from your shaving cream of choice. Omega brushes are made in Italy.\r\n\r\nSynthetic Hi-Brush\r\nBarber Pole Handle\r\nQuick Drying",
+        "price": "44.95",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "synthetic_brush005.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+        "category": 9,
+        "name": "Omega Roma Synthetic Brush",
+        "sku": "SB-06",
+        "description": "The Omega synthetic shaving brush is a high quality brush that offers exceptional value and performance. The handle features The Capitoline Wolf from the legend of the founding of Rome.\r\n\r\nKnot 26mm\r\nLoft 45mm\r\nMade in Italy",
+        "price": "18.95",
+        "rating": "3.50",
+        "image_url": null,
+        "image": "synthetic_brush007.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+        "category": 10,
+        "name": "Semogue 1520 Shaving Brush",
+        "sku": "NSB-01",
+        "description": "The Semogue 1520 is a stylish boar hair shaving brush with a painted beech wood handle. It is an excellent all round performer and the price makes the Semogue an irresistible purchase.\r\n\r\nBoar Hair\r\nKnot 22mm\r\nHandle 55mm\r\nLoft 50mm",
+        "price": "11.95",
+        "rating": "3.30",
+        "image_url": null,
+        "image": "natural_brush006.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+        "category": 10,
+        "name": "Muhle 099 M 89 Rosegold Silvertip",
+        "sku": "NSB-02",
+        "description": "This Muhle Rosegold 099 M 89 Silvertip brush is the perfect matching partner for the rosegold R89 razor. The brush features premium silvertip natural badger hair and the shimmering rosegold finish completes this fine Muhle shaving tool.\r\n\r\nKnot: 19mm\r\nRosegold Finish",
+        "price": "89.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "natural_brush002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+        "category": 10,
+        "name": "Semogue Owners Club 2 Band Badger Ash",
+        "sku": "NSB-03",
+        "description": "The Semogue Owners Club boasts a stunning premium 2 band finest badger knot and features a classic turned Ash wood handle. The Semogue line of brushes has become the most desirable shaving accessory due to their finely crafted quality and outstanding stylish appearance.\r\n\r\nEngraved Ash Wood Handle\r\n2 Band Finest Badger Hair\r\n24mm Knot\r\n57mm Handle\r\n53mm Loft",
+        "price": "66.95",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "natural_brush005.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+        "category": 10,
+        "name": "Muhle Classic Silvertip Badger Brush",
+        "sku": "NSB-04",
+        "description": "The 21mm knot of premium Silvertip hair ensures a luxury shave with large amounts of lather. The classical traditionally turned black handle in combination with the finest grade of silvertip badger hair make this Muhle an outstanding brush.\r\n\r\n21mm Knot of Silvertip hair\r\nIvory resin turned handle",
+        "price": "77.95",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "natural_brush001.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+        "category": 10,
+        "name": "Simpsons Chubby 2 Super",
+        "sku": "NSB-05",
+        "description": "The hand crafted Simpsons Chubby 2 shaving brush is probably the most legendary and respected shaving brush of them all. Of the Chubby range the Chubby 2 is the most favoured due to its superbly balanced proportions. A truly impressive brush it has a 27mm knot of the Simpsons Super badger hair. Steeped in history the Chubby 2 is a must have brush for the serious wet shaver.\r\n\r\nKnot 27mm\r\nLoft 50mm\r\nSuper Badger",
+        "price": "220.95",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "natural_brush007.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+        "category": 10,
+        "name": "Simpsons Chubby 3",
+        "sku": "NSB-06",
+        "description": "The Simpsons Chubby shaving brush is probably the most legendary and respected shaving brush of them all. A truly impressive brush it has a 29mm knot of Simpsons best badger hair. The Chubby is a must have brush for the serious wet shaver.\r\n\r\nKnot 29mm\r\nLoft 56mm",
+        "price": "240.95",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "natural_brush008.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+        "category": 10,
+        "name": "Omega Shaving Brush 20102",
+        "sku": "NSB-07",
+        "description": "This is a very stylish brush from the famous Omega factory. It features a wooden handle with black and chrome trim. From the \"Professional\" series this brush is made from 100% bristle and will build up an excellent rich lather.\r\n\r\nElegant design\r\nPure boar bristle provides an excellent shave\r\nIdeal for shave soaps and creams\r\nMade in Italy",
+        "price": "21.95",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "natural_brush003.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+        "category": 10,
+        "name": "Omega 21762 Italian Flag",
+        "sku": "NSB-08",
+        "description": "The Omega 21762 \"Italian Flag\" shaving brush has a premium resin turned handle. The large professional grade boar knot easily produces lather in abundance from soaps and creams alike. Standing at 127mm tall the knot has a large 27mm diameter and 64mm loft. Omega shaving brushes are the workhorse brush of barbers across Italy.",
+        "price": "34.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "natural_brush004.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+        "category": 11,
+        "name": "Derby Extra Double Edged Razor Blades (5 Pack)",
+        "sku": "DE-01",
+        "description": "Derby Extra Double Edge Blades fit all traditional double edge razors. These blades feature a chromium-ceramic, platinum, tungsten and polymer coating for optimum shaving comfort.\r\n\r\nEach pack contains a total of 5 blades.\r\n\r\nAverages 4 shaves per blade.\r\n\r\nAlso available in larger 100 blade packs, which work out much cheaper.\r\n\r\nPacked in a plastic container.\r\n\r\nMade in Turkey.",
+        "price": "1.95",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "de_blades001.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+        "category": 12,
+        "name": "Derby Single Edged Razor Blades (100 Pack)",
+        "sku": "SEB-01",
+        "description": "Derby Professional Stainless Steel Single Edge Blades fit all straight/barber razors (Cut-throat razors). Suitable for all cut-throat/shavette type razors including The Bluebeards Revenge, Parker etc.\r\n\r\nThese blades come individually wax paper wrapped and feature a chromium-ceramic, platinum, tungsten and polymer coating for optimum shaving comfort.\r\n\r\nNo need to split double edge razor blades anymore.\r\n\r\nCardboard packaging.\r\n\r\nMade in Turkey.",
+        "price": "7.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "shavette_blades001.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 62,
+    "fields": {
+        "category": 12,
+        "name": "Derby Premium Single Edged Razor Blades (100 Pack)",
+        "sku": "SEB-02",
+        "description": "Derby Premium Single Edge Blades fit all straight/barber razors (Cut-throat razors). Suitable for all cut-throat/shavette type razors including The Bluebeards Revenge, Parker etc.\r\n\r\nThese blades come individually wax paper wrapped and feature a chromium-ceramic, platinum, tungsten and polymer coating for optimum shaving comfort.\r\n\r\nNo need to split double edge razor blades anymore.\r\n\r\nCardboard packaging.\r\n\r\nMade in Turkey.",
+        "price": "8.95",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "shavette_blades002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 63,
+    "fields": {
+        "category": 12,
+        "name": "Permasharp 100 Single Shavette Blades",
+        "sku": "SEB-03",
+        "description": "Permasharp professional shavette blades are pre snapped in half for your convenience. These fit the majority of shavette razors and Dovo razors with a red insert.\r\n\r\nProfessional barber blades\r\n100 Blades\r\nPre Snapped for safety and convenience",
+        "price": "9.95",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "shavette_blades003.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 64,
+    "fields": {
+        "category": 11,
+        "name": "100 Astra Superior Platinum DE Blades Carton",
+        "sku": "DE-02",
+        "description": "Astra superior platinum de blades in a bulk pack of 100 blades. A very popular blade made in St Petersburg Russia. An excellent all round blade for safety razors.\r\n\r\n20 packs of 5 packs\r\nApprox 1 years supply",
+        "price": "13.95",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "de_blades003.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 65,
+    "fields": {
+        "category": 11,
+        "name": "Shark Super Chrome 100 Pack",
+        "sku": "DE-03",
+        "description": "100 pack of Shark Super chrome double edge blades. A smooth sharp stainless steel blades with a special coating to preserve a sharp edge. Fits all safety razors.",
+        "price": "12.95",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "de_blades009.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 66,
+    "fields": {
+        "category": 11,
+        "name": "Astra Superior Platinum DE Razor Blades (5 pack)",
+        "sku": "DE-04",
+        "description": "Astra superior platinum razor blades provide the right combination of smoothness and sharpness. The double edge razor blades are very well balanced and will provide a very close shave. Made by Gillette these blades meet high standards and feature a platinum coated edge. They are durable, smooth and sharp.",
+        "price": "1.85",
+        "rating": "4.60",
+        "image_url": null,
+        "image": "de_blades002.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 67,
+    "fields": {
+        "category": 11,
+        "name": "Shark Double Double Edge Blades (5 pack)",
+        "sku": "DE-05",
+        "description": "Shark Super Stainless double edge blades for safety razors live up to their name and are often praised for their sharpness and longevity. Over all these Shark blades offer consistency and quality and are well worth a try.\r\n\r\nIndividually wrapped in packs of 5\r\nSuper Stainless\r\nAll our blades are compatible with all safety razors",
+        "price": "1.95",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "de_blades008.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 68,
+    "fields": {
+        "category": 11,
+        "name": "Feather 5 Pack",
+        "sku": "DE-06",
+        "description": "Feather double edge blades from Japan are the benchmark by which all others are measured. This black pack is the exact same blade as our yellow pack Feathers.\r\n\r\n5 Pack\r\nSuitable for all our safety razors",
+        "price": "2.70",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "de_blades006.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 69,
+    "fields": {
+        "category": 11,
+        "name": "Wilkinson Sword Razor Blades (5 pack)",
+        "sku": "DE-07",
+        "description": "Wilkinson Sword double edge safety razor blades are made in Solingen Germany. They offer an all round quality shave. \r\n\r\n5 razor blades per pack\r\nHigh quality\r\nSwedish Steel.\r\nFor safety razors",
+        "price": "2.15",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "de_blades010.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 70,
+    "fields": {
+        "category": 11,
+        "name": "Bic Chrome Platinum Double Edge Blades (5 pack)",
+        "sku": "DE-08",
+        "description": "Bic Chrome Platinum Blades DE blades made from stainless steel come in packs of 5 blades. The razor blades are triple honed with a polymeric and platinum coating and a Teflon treatment. These blades are manufactured in Greece.",
+        "price": "2.35",
+        "rating": "3.90",
+        "image_url": null,
+        "image": "de_blades004.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 71,
+    "fields": {
+        "category": 11,
+        "name": "Gillette 7 O Clock Super Stainless Razor Blades",
+        "sku": "DE-09",
+        "description": "A very good blade made in St Petersburg Russia under licence from Gillette. These 7 O’clock Super Stainless green packs are a highly regarded blade and give a close shave every time. 7 O'clock blades come double wrapped in packets of 5.",
+        "price": "2.45",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "de_blades007.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 72,
+    "fields": {
+        "category": 11,
+        "name": "Double Edge Blades 100 pack",
+        "sku": "DE-10",
+        "description": "Derby razor blades are a popular choice for safety razors and offer excellent value. This double edge razor blades are platinum coated and fit all our safety razors. This eco pack of Derby razor blades is a more sustainable zero waste alternative and contains 100 individually wrapped DE blades.\r\n\r\n100 blade Eco Pack Derby Blades\r\nZero waste\r\nMade in Turkey",
+        "price": "9.95",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "de_blades005.webp"
+    }
+}
+]
