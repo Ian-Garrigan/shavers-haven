@@ -1,0 +1,1 @@
+web: gunicorn shavers-haven.wsgi:application
