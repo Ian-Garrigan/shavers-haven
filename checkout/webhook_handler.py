@@ -14,3 +14,25 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
+
+    def handle_payment_intent_succeeded(self, event):
+        """
+        Handle the payment_intent.succeeded webhook from Stripe
+        """
+        intent = event.data.object
+        pid = intent.id
+        bag = intent.metadata.bag
+        save_info = intent.metadata.save_info
+
+        stripe_charge = stripe.Charge.retrieve(
+        intent.latest_charge
+    )
+
+
+    def handle_payment_intent_payment_failed(self, event):
+        """
+        Handle the payment_intent.payment_failed webhook from Stripe
+        """
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]}',
+            status=200)

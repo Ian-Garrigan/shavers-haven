@@ -8,13 +8,15 @@ from django.conf import settings
 from decimal import Decimal
 from products.models import Product
 from django_countries.fields import CountryField
+from profiles.models import UserProfile
 
 
 
 #Model to create and track orders for user purchases
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    ##user profile field to be addded here
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, 
+                                        related_name='orders')
     order_number = models.CharField(max_length=32, null=False, editable=False)
     order_date = models.DateTimeField(auto_now_add=True)
     full_name = models.CharField(max_length=50, null=False, blank=False)
