@@ -27,9 +27,7 @@ def checkout(request):
     )
 
     if not stripe_public_key:
-        messages.warning(
-            request,
-            "Stripe public key is missing. \
+        messages.warning(request, "Stripe public key is missing. \
             Did you forget to set it in your environment?",
         )
         
