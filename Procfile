@@ -1,1 +1,1 @@
-web: gunicorn shavers-haven.wsgi:application
+web: gunicorn shavers_haven.wsgi:application
