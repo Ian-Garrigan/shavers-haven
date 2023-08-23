@@ -29,4 +29,4 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'boutique_ado.views.handler404'
+handler404 = 'shavers_haven.views.handler404'
