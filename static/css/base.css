@@ -69,7 +69,7 @@ body {
 }
 
 .text-navy {
-    color: rgb(104, 48, 8);
+    color: #683008;
     font-family: 'Calistoga', cursive;
 }
 
@@ -107,6 +107,11 @@ a.category-badge > span.badge:hover {
 
 .btt-link , .update-link, .remove-item {
     cursor: pointer;
+}
+
+/* search box */
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 
 .message-container {
