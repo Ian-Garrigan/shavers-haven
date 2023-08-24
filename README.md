@@ -174,3 +174,11 @@ Lighthouse testing:
 
 ![lighthouse](documentation/screenshots/testing/lighthouse.png)
 
+## Credits: 
+
+- I would like to acknowlege the help of many fellow students & the code institute coursework for giving me lots of help. 
+
+I would like to note i have not been able to complete the readme with only a few minutes to go i had to submit. Hopefully i can get to put the finishing touches to it. 
+
+
+
