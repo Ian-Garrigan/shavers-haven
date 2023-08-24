@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /bag/
+Sitemap: https://shavers-haven-b1ce6026470c.herokuapp.com/sitemap.xml
