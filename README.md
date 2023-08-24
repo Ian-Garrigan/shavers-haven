@@ -109,3 +109,68 @@ Aiming to become more relevant to consumers and be a strong brand  present in th
 - Stage 2: Active Evaluation
 
 SEO (Search Engine Optimization): Using a mix of head terms and long-tail keywords with low keyword difficulty or competition to ensure that the website ranks high more easily in search results when potential customers look for skin-friendly shaving solutions. 
+
+| Key Words                     | Average Search Volume  | Keyword Difficulty / Competition |
+|-------------------------------|------------------------|----------------------------------|
+| Shaving                       | 161.5K (Global)        | 24%                              |
+| How to shave                  | 35.1K                  | 69%                              |
+|  How to shave your face       | 35.1K                  | 52%                              |
+| Double edge razor             | 7.9K                   | 18%                              |
+| Double edged razor blades     | 6.9K                   | 16%                              |
+| Double edged razor            | 4.6K                   | 15%                              |
+| Best double edge razor blades | 2.05K                  | 16%                              |
+| Double edge safety razor      | 4.6K                   | 20%                              |
+| Best razor for sensitive skin | 4.4K                   | High Competition                 |
+| Treat razor burn              | 3.6K                   | Low Competition                  |
+| Prevent razor burn            | 2.9K                   | Low Competition                  |
+| Get rid of shaving pump       | 2.4K                   | Low Competition                  |
+| Help with razor burn          | 1.9K                   | Low Competition                  |
+| Soothe razor burn             | 1.9K                   | Low Competition                  |
+
+
+- Copywriting:  In-website communication,  product copywriting description and CTAs to persuade consumers and increase conversion.
+
+
+![Shavers-haven1](documentation/screenshots/social-media/facebook-1.png)
+
+Aiming to be at the top or at a relevant position in Google search to reach consumers in the active evaluation of their decision journey.
+
+Stage 3: Moment of Purchase
+Website UX/UI: Creating an intuitive and user-friendly website design that makes product exploration and selection effortless.
+
+Aiming to drive high conversion at the moment of purchase of their decision journey.
+
+
+Stage 4: Post-Purchase Experience
+Newsletter Subscriptions: Encouraging customers to subscribe to our newsletter for exclusive grooming tips such as after-purchase customer care, product updates, and special offers.
+
+(Add screenshot of newsletter form)
+
+These strategies ensure that Shaver's Haven effectively addresses customers' needs at every stage of their journey, from consideration to post-purchase satisfaction.
+
+
+![Shavers-haven3](documentation/screenshots/readme/marketing.png)
+
+Favicon 
+A new favicon has been included on the website, helping users quickly spot the site in their browser even when they have multiple tabs open.
+(Add favicon photo)
+
+Mobile
+The website is Mobile First, therefore, the change from mobile to desktop form is seamless and offers users use the same using experience. 
+
+(Add mobile screenshots)  
+
+
+UI
+Design 
+
+Opted for a minimalistic design, with colour scheme, fonts and squared  lines  that match the target audience ( described under section  “ideal user”) to convey strong brand identity. 
+
+
+
+## Testing 
+
+Lighthouse testing: 
+
+![lighthouse](documentation/screenshots/testing/lighthouse.png)
+
