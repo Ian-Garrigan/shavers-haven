@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+        body {
+            background-color: #f9f9f9;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            color: #683008
+        }
+
+        img {
+            width: 10rem;
+            height: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: 3rem 0;">
+        <a href="https://shavers-haven-b1ce6026470c.herokuapp.com/" target="_blank"
+            style="color: #683008; font-size: 2rem; font-family: 'Calistoga'; max-width: fit-content; text-transform: uppercase; text-decoration: none;"><strong>Shavers</strong>
+            <span style="font-family: 'Gill Sans';">Haven</span>
+        </a>
+        <hr>
+        <h1 style="margin-bottom: 0;">Order Confirmation</h1>
+        <p>Thank you for shopping with us!</p>
+        <hr>
+        <p><strong>Order Number: </strong> {{ order.order_number }}</p>
+        <p><strong>Order Date: </strong>{{ order.order_date }}</p>
+        <hr>
+        <p><strong>Your Order Contains.. </strong></p>
+        {% for item in order.lineitems.all %}
+        <p style="margin-bottom: 1rem; color: #683008;"><strong>{{ item.product.name }}</strong></p>
+        {% if item.product.image %}
+        <img src="{{ item.product.image.url }}">
+        {% else %}
+        <img src="https://shavers-haven.s3.eu-west-1.amazonaws.com/media/shavers-haven-design.png">
+        {% endif %}
+        <p style="margin: 0 auto; font-size: small;">Qty: {{ item.quantity }} Price: €{{ item.product.price }} each
+        </p>
+        <hr>
+        {% endfor %}
+        <p> {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+        </p>
+        <p><strong>Subtotal: </strong>€{{ order.order_total }}</p>
+        <p><strong>Shipping: </strong>€{{ order.delivery_cost }}</p>
+        <p><strong>Grand Total: </strong>€{{ order.grand_total }}</p>
+        <p style="margin-bottom: 2rem;">Should you have any inquiries, don't hesitate to reach out to us.</p>
+        <hr>
+        <p><a href="https://shavers-haven-b1ce6026470c.herokuapp.com/contact_us/" target="_blank"
+                style=" font-size: 1.4rem; background-color: #683008; color: black; text-transform: uppercase; text-decoration: none; padding: .3rem 1rem;"><strong>Contact
+                    Us</strong>
+            </a></p>
+    </div>
+</body>
+
+</html>
