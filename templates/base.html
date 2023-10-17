@@ -30,6 +30,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <!-- mailchimp css -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   {% endblock %}
 
   {% block extra_css %}
@@ -54,10 +56,10 @@
 
 <body>
   <header class="container-fluid fixed-top">
-    <div id="topnav" class="row bg-white d-none d-lg-flex">
+    <div id="topnav" class="row d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <img src="https://shavers-haven.s3.eu-west-1.amazonaws.com/media/site-logo-med.png" alt="Brand-logo for bigger screen" class="img-fluid d-none d-md-block">
+          <img src="/media/site-logo-med-3.png" alt="Brand-logo for bigger screen" class="img-fluid d-none d-md-block">
         </a>
       </div>
       <!-- FORM -->
