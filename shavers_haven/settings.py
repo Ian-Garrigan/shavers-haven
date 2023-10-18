@@ -226,7 +226,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 
 if "DEVELOPMENT" in os.environ:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-    DEFAULT_FROM_EMAIL = "shavershaven.com"
+    DEFAULT_FROM_EMAIL = "example@test.com"
 else:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_USE_TLS = True
