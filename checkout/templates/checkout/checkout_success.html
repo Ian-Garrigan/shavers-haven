@@ -6,11 +6,9 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+{% endblock %}
+
+{% block header_class %}
 {% endblock %}
 
 {% block content %}
@@ -209,11 +207,11 @@
 					<span class="text-uppercase">Back to Profile</span>
 				</a>
                 {% else %}
-				<a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
+				<a href="/#newsletter" class="btn btn-info rounded-0 my-2">
 					<span class="icon mr-2">
 						<i class="fas fa-gifts"></i>
 					</span>
-					<span class="text-uppercase">Now check out the latest deals!</span>
+					<span>Subscribe to our Newsletter?</span>
 				</a>
                 {% endif %}
 			</div>

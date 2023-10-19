@@ -23,6 +23,7 @@
   {% block corecss %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -44,6 +45,7 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f2bd25728d.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <!-- Stripe -->
   <script src="https://js.stripe.com/v3/"></script>
   {% endblock %}
@@ -71,7 +73,7 @@
             <div class="input-group-append">
               <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                 <span class="icon">
-                  <i class="fas fa-search"></i>
+                  <i class="bi bi-search"></i>
                 </span>
               </button>
             </div>
@@ -85,8 +87,8 @@
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0">My Account</p>
+                <div><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></div>
+                <p class="my-0">Account</p>
               </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -95,6 +97,7 @@
               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+              <a href="#" class="dropdown-item">Wishlist</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
               {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -107,7 +110,7 @@
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
               href="{% url 'view_bag' %}">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <div><i class="bi bi-cart-dash" style="font-size: 1.5rem;"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
                   €{{ grand_total|floatformat:2 }}

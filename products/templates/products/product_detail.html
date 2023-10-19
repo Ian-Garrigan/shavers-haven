@@ -2,11 +2,9 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
+{% endblock %}
+
+{% block header_class %}
 {% endblock %}
 
 {% block content %}
@@ -32,30 +30,30 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <!-- name -->
-                <p class="mb-0">{{ product.name }}</p>
+                <p class="mb-0 lead">{{ product.name }}</p>
                 <!-- price -->
-                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                <p class="lead mb-0 text-left font-weight-normal">€{{ product.price }}</p>
                 {% if product.category %}
-                <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                    </a>
-                </p>
-                {% endif %}
-                <!-- rating if it exists -->
-                {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                {% else %}
-                <small class="text-muted">No Rating</small>
-                {% endif %}
+                    <p class="small font-italic mt-1 mb-0">
+                        <a class="text-muted " href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}&nbsp;
+                        </a>
+                        <!-- rating if it exists -->
+                        {% if product.rating %}
+                            <i class="bi bi-star-fill text-warning"></i>&nbsp;{{ product.rating }}<i class="bi bi-slash-lg"></i>5
+                        {% else %}
+                            No Rating
+                        {% endif %}
+                    {% endif %}
                 {% if request.user.is_superuser %}
-                    <small class="ml-3">
+                    <small class="ml-2">
                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                     </small>
+                    </p>
                     {% endif %}
                 <!-- description -->
-                <p class="mt-3text-justify"><strong>About this product:</strong><br>{{ product.description }}</p>
+                <p class="mt-4 text-justify"><strong>About this product:</strong><br><p class="mt-3">{{ product.description }}</p></p>
                 <!-- This form facilitates adding the product to the shopping bag through a POST request, 
                     allowing us to pass information to the server -->
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
