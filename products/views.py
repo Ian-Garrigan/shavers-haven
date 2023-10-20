@@ -5,7 +5,9 @@ from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, Review
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
+from profiles.models import UserProfile
+
 
 # Create your views here.
 def all_products(request):
@@ -70,9 +72,12 @@ def product_detail(request, product_id):
     """A view to show details of product"""
 
     product = get_object_or_404(Product, pk=product_id)
+    review = Review.objects.filter(product=product).order_by("-created_on")
+
 
     context = {
         'product': product,
+        'review' : review,
     }
 
     return render(request, 'products/product_detail.html', context)
