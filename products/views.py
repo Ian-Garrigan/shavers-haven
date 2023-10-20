@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, Review
@@ -141,3 +142,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+@login_required
+def add_review(request, product_id):
+    """publish a review from user"""
+
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == "POST":
+        review_form = ReviewForm(request.POST)
+
+        if review_form.is_valid():
+            try:
+                Review.objects.create(
+                    product=product,
+                    user=request.user,
+                    name=request.POST["name"],
+                    review=request.POST["review"],
+                )
+                reviews = Review.objects.filter(product=product)
+                messages.info(request, "You added a review")
+                return redirect(reverse("product_detail", args=[product.id]))
+            except IntegrityError:
+                messages.error(request, "You have reviewed this product already.")
+                return redirect(reverse("product_detail", args=[product.id]))
+        else:
+            messages.error(request, "Submission failed, please try again.")
+    return redirect(reverse("product_detail", args=[product.id]))
