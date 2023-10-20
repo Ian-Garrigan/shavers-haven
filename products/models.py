@@ -1,5 +1,8 @@
 from django.db import models
 
+from django.contrib.auth.models import User
+from profiles.models import UserProfile
+
 # Create your models here.
 class Category(models.Model):
     """
@@ -39,4 +42,20 @@ class Product(models.Model):
     def __str__(self):
         """Returns Category model name"""
         return self.name
-   
+
+
+class Review(models.Model):
+    """
+    Model for reviewing a product
+    """
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50, blank=True)
+    review = models.TextField(max_length=500, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return self.name
