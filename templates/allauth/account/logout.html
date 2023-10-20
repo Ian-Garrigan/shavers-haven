@@ -6,22 +6,22 @@
 
 {% block inner_content %}
 <hr>
-<div class="container">
-  <div class="row text-center">
-    <div class="col-12">
-      <h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
-      <hr>
-      <p>{% trans 'Are you sure you want to sign out?' %}</p>
+<div class="container-fluid">
+ <div class="row text-center">
+      <div class="col-12 text-align-center">
+        <h2 class="logo-font text-navy text-dark mb-4">{% trans "Sign Out" %}</h2>
+        <hr>
+        <p class="h4">{% trans 'Are you sure you want to sign out?' %}</p>
 
-      <form method="post" class="mb-3" action="{% url 'account_logout' %}">
-        {% csrf_token %}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-        <button type="submit">{% trans 'Sign Out' %}</button>
-      </form>
-    </div>
+        <form method="post" class="my-4" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
+          <button type="submit">{% trans 'Yes' %}</button>
+        </form>
+      </div>
   </div>
 </div>
 

@@ -62,3 +62,21 @@ def remove_from_wishlist(request, product_id):
         messages.info(request, f'{product.name} not in your wishlist!')
 
     return redirect('product_detail', product_id=product_id)
+
+
+def delete_wishlist(request):
+    """
+    Completely clear the wishlist
+    """
+
+    wishlist = Wishlist.objects.get(user=request.user)
+
+    complete_products = wishlist.product.all()
+
+    for product in complete_products:
+        wishlist.product.remove(product)
+
+    wishlist.product.remove(product)
+    messages.info(request, "Wishlist deleted.")
+
+    return redirect(reverse("wishlist"))
