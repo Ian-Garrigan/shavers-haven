@@ -63,11 +63,23 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shavers-haven-design.png"
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
-                        <!-- product name -->
+                        {% if request.user.is_authenticated %}
+                        <div class="text-right mt-1">
+                            <a class="text-dark" href="{% url 'add_to_wishlist' product.id %}" data-product-id="{{ product.id }}">
+                                <i class="bi bi-bookmark-star-fill" style="font-size: 1.3rem;"></i>
+                            </a>
+                        </div>
+                        {% else %}
+                        <div class="text-right mt-1">
+                            <a class="text-dark" href="{% url 'account_login' %}">
+                                <i class="bi bi-bookmark-star-fill" style="font-size: 1.3rem;"></i>
+                            </a>
+                        </div>
+                        {% endif %}
                         <div class="card-body pb-0">
                             <p class="mb-0">{{ product.name }}</p>
                         </div>

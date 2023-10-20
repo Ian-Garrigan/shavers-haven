@@ -1,12 +1,12 @@
 <div class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
-    <div class="w-100 toast-capper bg-info"></div>
-      <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto text-dark">Info</strong>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="w-100 toast-capper bg-dark"></div>
+      <div class="toast-header text-dark">
+        <h5 class="logo-font text-black my-0"><strong class="text-navy">Shavers</strong>Haven &nbsp;</h5>
       </div>
-      <div class="toast-body bg-white">
-        {{ message }}
+      <div class="toast-body">
+        <mark>{{ message }}</mark>
+        <button type="button" class="my-3 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true"><iconify-icon icon="emojione-v1:ok-button"></iconify-icon></span>
+        </button>
       </div>
     </div>

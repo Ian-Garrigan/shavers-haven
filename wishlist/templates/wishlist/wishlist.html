@@ -12,16 +12,16 @@
     <div class="container mb-1">
         <div class="row">
             <div class="col">
-                <h2 class="title-font text-center">Wishlist Items:</h2>
+                <h2 class="text-navy text-dark ml-3">Wishlist Items:</h2>
             </div>
         </div>
     </div>
     <div class="container mb-5">
         <!-- if products exist in the users wishlist -->
-        {% if wishlist.products.exists %}
+        {% if wishlist.product.exists %}
         <div class="d-block d-md-none">
             <!-- for each product in the wishlist -->
-            {% for product in wishlist.products.all %}
+            {% for product in wishlist.product.all %}
             <div class="text-center">
                 <div data-label="Product:" class="mb-3">
                     {% if product.image %}
@@ -41,20 +41,19 @@
                 <!-- Link to View Product -->
                 <div class="wishlist mb-3" data-label="View Product:">
                     View Product:
-                    <a href="{% url 'product_detail' item.product.id %}" aria-label="A detailed product page link">
-                        <iconify-icon icon="material-symbols:view-day-outline"></iconify-icon>
+                    <a href="{% url 'product_detail' product.id %}" aria-label="A detailed product page link">
+                        <iconify-icon icon="icon-park:telescope" width="18"></iconify-icon>
                     </a>
                 </div>
                 <!-- Link to Remove Product -->
                 <div class="wishlist mb-3" data-label="Remove Product:">
                     Remove Product:
-                    <a href="#"
+                    <a href="{% url 'remove_from_wishlist' product.id %}"
                         aria-label="remove product from list link">
                         <iconify-icon icon="solar:trash-bin-trash-outline"></iconify-icon>
                     </a>
                 </div>
             </div>
-
             {% if forloop.counter|divisibleby:1 %}
             <div class="col-12 d-sm-none mt-3 mb-3">
                 <hr class="mt-4">
@@ -77,7 +76,7 @@
                 </thead>
                 <tbody>
                     <!-- for each product in the wishlist -->
-                    {% for product in wishlist.products.all %}
+                    {% for product in wishlist.product.all %}
                     <tr class="wishlist-table">
                         <td class="wishlist-title" data-label="Product:">
                             {% if product.image %}
@@ -96,16 +95,16 @@
                                 </p>
                             </div>
                         </td>
-                        <td class="wishlist" data-label="View Product:">
-                            <a href="{% url 'product_detail' item.product.id %}"
+                        <td class="wishlist" data-label="Product detail view">
+                            <a href="{% url 'product_detail' product.id %}"
                                 aria-label="Link to View Product Detail Page">
-                                <iconify-icon icon="material-symbols:view-day-outline"></iconify-icon>
+                                <iconify-icon icon="icon-park:telescope" width="18"></iconify-icon>
                             </a>
                         </td>
-                        <td class="wishlist" data-label="Remove Product:">
-                            <a href="{% url 'remove_wishlist' product.id %}?next={% url 'wishlist' %}"
+                        <td class="wishlist" data-label="Delete product">
+                            <a href="{% url 'remove_from_wishlist' product.id %}"
                                 aria-label="Link to Remove Product">
-                                <iconify-icon icon="solar:trash-bin-trash-outline"></iconify-icon>
+                                <iconify-icon icon="solar:trash-bin-trash-bold-duotone" style="color: #c31d1d;" width="18"></iconify-icon>
                             </a>
                         </td>
                     </tr>
