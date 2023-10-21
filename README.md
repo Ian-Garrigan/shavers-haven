@@ -335,4 +335,6 @@ The Contact Us page is accessible to all users via the 'Contact Us' link in the 
 
 # Testing
 
+I have included my details of the testing during the project in [TESTING.md](TESTING.md)
+
 
