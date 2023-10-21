@@ -29,17 +29,20 @@ To showcase the skills learned throughout the course and display how such skills
         + [Canban board and issues](#agile-methodology)
         + [Epics & User Stories](#agile-methodology)
     * [Existing Features](#existing-features)
-        + [Media Screen Sizes](#navbar-and-footer) 
-        + [Navbar and Footer](#navbar-and-footer) 
-        + [Shop Products](#shop-products)
-        + [Product Details](#product-details)
-        + [Homepage](#homepage)
-        + [landing Page](#landing-page)
-        + [Shopping bag](#shopping-bag)
-        + [Email Notification](#email-notification)
-        + [User Messages](#user-messages)
+        + [Homepage](#homepage) 
+        + [Landing Page](#landing-page) 
         + [About Us](#about-us)
-        + [Registration/Authentication](#registration-authentication)
+        + [Newsletter](#newsletter)
+        + [Searchbar](#searchbar)
+        + [All Products](#all-products)
+        + [Product Detail](#product-detail)
+        + [Reviews](#reviews)
+        + [Admin pages](#admin-pages)
+        + [Shopping bag](#shopping-bag)
+        + [Order Invoice](#order-invoice)
+        + [Wishlist](#wishlist)
+        + [Order History](#orddr-history)
+        + [Contact Us](#contact-us)
     * [Future Features](#future-features)
         + [Current stock](#current-stock)
         + [Customer Text Reviews](#customer-text-reviews)
@@ -240,21 +243,31 @@ The Homepage is a single landing page that has evolved into a straightforward, s
 
 ### Landing Page: 
 
+![landing-page](documentation/screenshots/readme/feature1.webp)
+
 The Landing page features a brief message and it's accompanied by a traditional shaving selection hero image. The background of the page is toned down in brightness to make the text stand out. 
 
 ### About Us: 
+
+![about-us](documentation/screenshots/readme/feature3.webp)
 
 A simple no thrills page that gives the user a story about the business which can be pleasing to know for some potential buyers. 
 
 ### Newsletter:
 
+![newsletter](documentation/screenshots/readme/feature2.webp)
+
 The Newsletter section boasts an elegantly designed embedded form created with Mailchimp.com. This form allows users to easily subscribe to our site's Newsletter, ensuring they stay informed about the latest updates and offerings by e-mail. 
 
 ### Searchbar: 
 
+![search](documentation/screenshots/readme/feature4.webp )
+
 At any point, users have the option to use the Search bar in the main header. Here, users can input their search query, and upon pressing enter or click on the magnifying glass icon, they will be redirected to the Products Page where their search results are displayed. 
 
 ### All Products:
+
+![all-products]( documentation/screenshots/readme/feature5.webp)
 
 The Products Page presents a comprehensive list of all available products. Users can pick through the range of products by selecting a specific category or brand from the dropdown menu in the navigation bar.
 
@@ -262,35 +275,61 @@ Each individual product is presented in a card format, containing essential deta
 
 
 ### Product Detail: 
+
+![product-detail](documentation/screenshots/readme/feature6.webp )
+
 The product detail page shows a larger product image, a description for the product, as well as allowing the user to add this product to their bag for future checkout.
 
 ### Reviews:
 
+![reviews]( documentation/screenshots/readme/feature7.webp)
+
 Only registered users can leave a review on products. The reviews are embedded quickly onto the products details page second section. Users can delete the review the left just as easily with the delete button. 
 
 ### Admin pages:
+
+![admin](documentation/screenshots/readme/feature8.webp )
+
 Access to adding, editing, or deleting products is exclusively granted to staff, specifically super users. When administrators are logged in, they will notice the 'Product Management' link displayed within the 'Account' dropdown menu. Clicking on this link will redirect staff members to the 'Add Product' page, where they can enter a new product.
 
 ### Shopping bag:
+
+![shopping-bag](documentation/screenshots/readme/feature9.webp )
+
+
 Users have the flexibility to add products to their shopping bag from either the 'All Products' page or the 'Product Detail' page. When the 'Add to bag' button is clicked, a toast message promptly appears, displaying item cost and continue to checkout button. The Navbar shopping bag amount is updated in real-time. Users can initiate the checkout process by clicking either the shopping bag icon or the 'Go to Secure Checkout' link within the mentioned toast message.
 
 ### Checkout:
 
+![checkout]( documentation/screenshots/readme/feature10.webp)
+
 The checkout page is designed to provide users withdetails of their potential purchase. It shows the selected products, their prices, quantity, captures user billing information, and integrates a secure Stripe element for card payments.
 
 ### Order invoice:
+
+![order-invoice]( documentation/screenshots/readme/feature11.webp)
+
 After a secure checkout, users are redirected to the Order Complete page, where an overview of the order is presented, including all the essential details. For registered users, the order is seamlessly updated in their Profile's Order History.
 
 To enhance the user experience, i tried to send out a custom email notification system so both registered and guest users receive a detailed email containing their order specifics. However i could not get it to function approriately, one for the future.
 
 ### Wishlist: 
+
+![wishlist](documentation/screenshots/readme/feature15.webp )
+
 The Wishlist page displays to the user a list of products they've marked as favorites by simply clicking the bookmark style icon on each product. This page offers a concise summary of each product along with a direct clickable viewfinder icon to its detailed products page, making it easy for users to add it to their cart.
 Adding or removing products from the wishlist is a breeze - just click the bookmark style icon on a product from  the 'All Products' page. Toast notifications pop up to confirm any addition,currently already in the list or ,removal from the wishlist. Users can also  efficiently manage their entire wishlist, with options to clear the entire list or remove individual items accordingly.
 
 ### Order History:
+
+![order-history](documentation/screenshots/readme/feature14.webp )
+
 The Order History section offers users a comprehensive record of all their past orders. Each order is presented with its contents and a direct link to the Order Complete page, where users can access all the order details, including billing and shipping information. It serves as a convenient summary of all previous purchases, allowing users to review their order history effortlessly.
 
 ### Contact Us: 
+
+![contact-us]( documentation/screenshots/readme/feature16.webp)
+
 The Contact Us page is accessible to all users via the 'Contact Us' link in the Footer. When clicked, users are directed to the Contact Us page, where they can select the nature of their inquiry and enter their message. The page features a user-friendly form for contacting the business, with all submitted information conveniently stored in the Admin panel for easy access by superusers.
 
 
