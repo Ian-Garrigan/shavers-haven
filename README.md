@@ -24,9 +24,10 @@ To showcase the skills learned throughout the course and display how such skills
         + [UI](#ui-design)
     * [Wireframes](#wireframes)
         + [Early Protoypes](#wireframes)
+    * [Database Schema](#database-schema)        
     * [Agile Methodology](#agile-methodology)
-        + [Canban board and issues](#canban-board-and-issues)
-        + [Epics & User Stories](#canban-board-and-issues)
+        + [Canban board and issues](#agile-methodology)
+        + [Epics & User Stories](#agile-methodology)
     * [Existing Features](#existing-features)
         + [Media Screen Sizes](#navbar-and-footer) 
         + [Navbar and Footer](#navbar-and-footer) 
@@ -168,7 +169,7 @@ The website is Mobile First, therefore, the change from mobile to desktop form i
 Opted for a minimalistic design, with colour scheme, fonts and squared  lines  that match the target audience ( described under section  “ideal user”) to convey strong brand identity. 
 
 # Wireframes
-To kickstart this project, I began by designing a layout using wireframes. For the front page, I opted for a Hero Image to offer users an immediate glimpse into the essence of the business. The product detail pages & all products view, on the other hand, feature individual cards that succinctly present all the essential details – enabling users to quickly assess the product, its price, and a brief description.
+To kickstart this project, I originally began by designing a layout using wireframes. For the front page, I opted for a Hero Image to offer users an immediate glimpse into the essence of the business. The product detail pages & all products view, on the other hand, feature individual cards that succinctly present all the essential details – enabling users to quickly assess the product, its price, and a brief description. Soon i added further to these design elements like the ability to create a product wishlist and leave a simple review underneath the detailed individual product pages. I have followed through with all of my original design processes and am happy with how the website turned out in the end. I feel like it offers everything a traditional shaver could want. 
 <details><summary>Early prototypes:</summary>
 
 ![ wireframe-1](documentation/screenshots/readme/wireframes/homepage.png)
@@ -179,6 +180,14 @@ To kickstart this project, I began by designing a layout using wireframes. For t
 </details>
 <br><br>
 
+# Database Schema
+
+The UserProfile and the Product Database serve as the primary components in the schema, connecting all products and profiles. The Products Database enables a connection to the Order Database, including the order number. It also allows for the creation of a Wishlist for users, utilizing a ManyToMany database structure to enable each user to add as many desired products as they wish.
+
+The connection between the Review Database and the Profile Database allows a registered/authenticated user to leave reviews for a product and delete them after if they wish.
+
+![erd](documentation/screenshots/readme/erd-diagram.png)
+
 # Agile Methodology
 I developed this project using agile methodologies, where I split each feature into User Stories, addressing the user's perspective and expectations on the website. I thoughtfully planned these User Stories, resulting in the creation of multiple tasks that I needed to implement specific features. I then grouped these tasks into Epics for efficient project management.
 
@@ -186,4 +195,105 @@ To facilitate and visualize this agile process, I used a Kanban board created wi
 
 To prioritize my work, I used a labeling system, classifying features as 'Must Have,' 'Should Have,' 'Could Have,' and 'Won't Have.' I gave the highest priority to the 'Must Have' stories, tackling them first to ensure that the project's core requirements were addressed promptly to provide a solid foundation. In some cases, I implemented certain 'Should Have' features ahead of schedule due to their alignment with critical tasks, like some product-related 'Should Have's' being developed alongside 'Must Have' tasks such as error templates. The remaining features were incorporated based on available capacity and timing.
 
-[Back to top &uarr;](#table-of-contents)
+### Epics & User Stories
+
+I generated a total of 16 Epics, which were subsequently broken down into 27 User Stories. You can explore comprehensive details about each Epic and its associated User Stories on the project's Kanban board linked above.
+
+    #16 EPIC: Document development 
+
+    #15 EPIC: Error template pages 
+
+    #14 EPIC: Contact Us 
+
+    #13 EPIC: Search Engine Optimization (SEO) 
+
+    #12 EPIC: Project Marketing 
+
+    #11 EPIC: Wishlist app 
+
+    #10 EPIC: User Profile 
+
+    #9 EPIC: Stripe payment system EPC
+
+    #8 EPIC: Admin control 
+
+    #7 EPIC: Checkout 
+
+    #6 EPIC: Store Products 
+
+    #5 EPIC: Configure AllAuth 
+
+    #4 EPIC: Shavers Haven Homepage 
+
+    #3 EPIC: Deploy with Heroku 
+
+    #2 EPIC: Set-up media host (AWS) 
+
+    #1 EPIC: Django setup 
+
+
+# Existing Features
+
+### Homepage: 
+
+The Homepage is a single landing page that has evolved into a straightforward, scrollable design with a dedicated Newsletter section for user engagement. The prominent hero image and accompanying text on the homepage immediately invite users to shop for available items.
+
+### Landing Page: 
+
+The Landing page features a brief message and it's accompanied by a traditional shaving selection hero image. The background of the page is toned down in brightness to make the text stand out. 
+
+### About Us: 
+
+A simple no thrills page that gives the user a story about the business which can be pleasing to know for some potential buyers. 
+
+### Newsletter:
+
+The Newsletter section boasts an elegantly designed embedded form created with Mailchimp.com. This form allows users to easily subscribe to our site's Newsletter, ensuring they stay informed about the latest updates and offerings by e-mail. 
+
+### Searchbar: 
+
+At any point, users have the option to use the Search bar in the main header. Here, users can input their search query, and upon pressing enter or click on the magnifying glass icon, they will be redirected to the Products Page where their search results are displayed. 
+
+### All Products:
+
+The Products Page presents a comprehensive list of all available products. Users can pick through the range of products by selecting a specific category or brand from the dropdown menu in the navigation bar.
+
+Each individual product is presented in a card format, containing essential details such as rating, price, brand, and category. All of these attributes can be filtered by use of a dropedown list. 
+
+
+### Product Detail: 
+The product detail page shows a larger product image, a description for the product, as well as allowing the user to add this product to their bag for future checkout.
+
+### Reviews:
+
+Only registered users can leave a review on products. The reviews are embedded quickly onto the products details page second section. Users can delete the review the left just as easily with the delete button. 
+
+### Admin pages:
+Access to adding, editing, or deleting products is exclusively granted to staff, specifically super users. When administrators are logged in, they will notice the 'Product Management' link displayed within the 'Account' dropdown menu. Clicking on this link will redirect staff members to the 'Add Product' page, where they can enter a new product.
+
+### Shopping bag:
+Users have the flexibility to add products to their shopping bag from either the 'All Products' page or the 'Product Detail' page. When the 'Add to bag' button is clicked, a toast message promptly appears, displaying item cost and continue to checkout button. The Navbar shopping bag amount is updated in real-time. Users can initiate the checkout process by clicking either the shopping bag icon or the 'Go to Secure Checkout' link within the mentioned toast message.
+
+### Checkout:
+
+The checkout page is designed to provide users withdetails of their potential purchase. It shows the selected products, their prices, quantity, captures user billing information, and integrates a secure Stripe element for card payments.
+
+### Order invoice:
+After a secure checkout, users are redirected to the Order Complete page, where an overview of the order is presented, including all the essential details. For registered users, the order is seamlessly updated in their Profile's Order History.
+
+To enhance the user experience, i tried to send out a custom email notification system so both registered and guest users receive a detailed email containing their order specifics. However i could not get it to function approriately, one for the future.
+
+### Wishlist: 
+The Wishlist page displays to the user a list of products they've marked as favorites by simply clicking the bookmark style icon on each product. This page offers a concise summary of each product along with a direct clickable viewfinder icon to its detailed products page, making it easy for users to add it to their cart.
+Adding or removing products from the wishlist is a breeze - just click the bookmark style icon on a product from  the 'All Products' page. Toast notifications pop up to confirm any addition,currently already in the list or ,removal from the wishlist. Users can also  efficiently manage their entire wishlist, with options to clear the entire list or remove individual items accordingly.
+
+### Order History:
+The Order History section offers users a comprehensive record of all their past orders. Each order is presented with its contents and a direct link to the Order Complete page, where users can access all the order details, including billing and shipping information. It serves as a convenient summary of all previous purchases, allowing users to review their order history effortlessly.
+
+### Contact Us: 
+The Contact Us page is accessible to all users via the 'Contact Us' link in the Footer. When clicked, users are directed to the Contact Us page, where they can select the nature of their inquiry and enter their message. The page features a user-friendly form for contacting the business, with all submitted information conveniently stored in the Admin panel for easy access by superusers.
+
+
+# Testing
+
+
