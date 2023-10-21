@@ -7,6 +7,9 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 from profiles.models import UserProfile
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.views.generic import DeleteView
+
 
 
 # Create your views here.
@@ -173,3 +176,25 @@ def add_review(request, product_id):
         else:
             messages.error(request, "Submission failed, please try again.")
     return redirect(reverse("product_detail", args=[product.id]))
+
+    
+class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Deleting Review with django class view
+    """
+
+    model = Review
+    template_name = "products/delete_review.html"
+    info_message = "Review deleted"
+
+    def test_func(self):
+        review = self.get_object()
+        user = self.request.user
+        return user == review.user or user.is_superuser
+
+    def get_success_url(self):
+        return reverse("product_detail", kwargs={"product_id": self.object.product_id})
+
+    def delete(self, request, *args, **kwargs):
+        messages.info(self.request, self.info_message)
+        return super(DeleteReview, self).delete(request, *args, **kwargs)

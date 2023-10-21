@@ -129,11 +129,11 @@
             <!-- Update and Delete Review buttons -->
             {% if user == review.user or user.is_superuser %}
             <div class="mb-3 text-center">
-                <a href="#" class="btn btn-danger my-2 ml-2">Delete</a>
+                <a href="{% url 'delete_review' review.id %}" class="btn btn-danger btn-sm my-2 ml-2">Delete</a>
             </div>
             {% endif %}
             {% empty %}
-            <h5 class="font-weight-bold text-black mb-2 mt-3 text-center">No reviews yet! Log in to add yours.</h5>
+            <h6 class="text-black mb-2 mt-3 text-center">No reviews for this product.</h5>
             {% endfor %}
         </div>   
         {% if user.is_authenticated %}

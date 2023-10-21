@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block page_header %}
+{% endblock %}
+
+{% block header_class %}
+{% endblock %}
+
+{% block content %}
+<div class="container h-100">
+    <div class="col-sm col-md-8 offset-md-2 p-2 my-4">
+        <form class="delete-form" method="POST">
+            {% csrf_token %}
+            <h3 class="text-navy text-dark my-3 ">Delete Review?</h3>
+            <hr>
+            <p class="h4 mb-3">Are you sure you want to delete the review:</p>
+            <div class="w-50 text-center lead bg-dark text-white"><strong>{{ object.review }}</strong></div>
+            <br>
+            <div>
+                <a class="btn bg-light border border-1 text-muted my-2" href="{% url 'products' %}">Cancel</a>             
+                <button class="btn btn-danger my-2" aria-label="delete post">Yes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
