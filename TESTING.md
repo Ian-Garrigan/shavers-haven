@@ -139,4 +139,8 @@ I've implemented the necessary features to ensure the utmost data security and c
 
  # Automated testing 
 
+ I intended to do a more in depth test of the main views and install a coverage report but ran into difficulties with little time to debug the cause of this :
+
+ ![coverage-report](documentation/screenshots/testing/coverage.png)
+
  

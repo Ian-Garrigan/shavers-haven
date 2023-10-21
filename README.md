@@ -337,4 +337,15 @@ The Contact Us page is accessible to all users via the 'Contact Us' link in the 
 
 I have included my details of the testing during the project in [TESTING.md](TESTING.md)
 
+# Deployment 
+
+I have included my details of the deployment here [Deployment.md](documentation/screenshots/deployment/deployment.md)
+
+# Credits :
+
+Boutique-ado code institute project and my fellow students Victoria, Sean and Kryspin. 
+
+It was a pleasure learning evrything throughout the year!
+
+
 
